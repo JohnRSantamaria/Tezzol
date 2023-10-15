@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import AuthRouter from './authRouter';
+import Navbar from '@/components/Navbar';
 
 const montserrat = Montserrat({
 	subsets: ['latin'],
@@ -16,13 +17,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en'>
-			<body className={montserrat.variable}>
+			<body className={`${montserrat.variable} bg-light dark:bg-dark text-dark dark:text-light `}>
 				<AuthRouter>
+					<Navbar />
 					<div
-						className='w-full h-screen bg-light dark:bg-dark text-white 
-						flex flex-col justify-center items-center gap-4 font-'
+						className='w-full min-h-screen
+						flex flex-col justify-center items-center gap-4 '
 					>
-						<div className='-mt-24' />
 						{children}
 					</div>
 				</AuthRouter>

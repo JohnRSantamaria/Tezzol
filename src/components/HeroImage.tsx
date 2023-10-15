@@ -3,7 +3,7 @@ import AnimatedText from './AnimatedText';
 
 export default function HeroImage() {
 	return (
-		<div>
+		<div className='flex flex-col items-center justify-center w-full min-h-screen'>
 			<div className='text-5xl md:text-6xl font-bold'>
 				<AnimatedText
 					text='Esteban Rodríguez'
