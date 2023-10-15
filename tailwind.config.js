@@ -10,12 +10,13 @@ export const darkMode = "class"
 export const theme = {
   extend: {
     fontFamily: {
-      mont: ['var(--font-mont)', ...fontFamily.sans],
+      mont: ['var(--font-mont)', ...fontFamily.sans],   
+      ceda: ['var(--font-ceda)', ...fontFamily.sans],
     },
     colors: {
       dark: "#1b1b1b",
       light: "#f5f5f5",
-      primary: "#0BB000", // 240,86,199        
+      primary: "#e21135", // red
     },
     backgroundImage: {
       'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

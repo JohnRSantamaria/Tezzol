@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import { Montserrat, Cedarville_Cursive } from 'next/font/google';
 import AuthRouter from './authRouter';
 import Navbar from '@/components/Navbar';
 
@@ -16,8 +16,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang='en'>
-			<body className={`${montserrat.variable} bg-light dark:bg-dark text-dark dark:text-light `}>
+		<html lang='es'>
+			<body
+				className={`${montserrat.variable}  font-mont bg-light dark:bg-dark text-dark dark:text-light `}
+			>
 				<AuthRouter>
 					<Navbar />
 					<div
