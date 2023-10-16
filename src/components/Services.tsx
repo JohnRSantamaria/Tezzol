@@ -13,7 +13,7 @@ export default function Services() {
 					<section className='w-1/3 '>
 						<h2 className='text-2xl font-bold text-primary'>Sala RAED VIP</h2>
 						<p className='text-lg font-bold'>
-							Precio: <span className='text-primary'>$50</span>
+							Precio: <span className='text-primary'>????</span>
 						</p>
 						<p className='font-medium'>
 							Estoy aquí para ofrecerte una experiencia completa que{' '}
@@ -39,7 +39,7 @@ export default function Services() {
 					<section className=' w-1/3'>
 						<h2 className='text-2xl font-bold text-primary'>Sala RAED</h2>
 						<p className='text-lg font-bold'>
-							Precio: <span className='text-primary'>$12</span>
+							Precio: <span className='text-primary'>????</span>
 						</p>
 						<p className='font-medium'>
 							Si buscas mejorar tus habilidades y mentalidad sin comprometerte al nivel VIP, te

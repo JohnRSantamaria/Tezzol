@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Montserrat, Cedarville_Cursive } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 import AuthRouter from './authRouter';
 import Navbar from '@/components/Navbar';
 
