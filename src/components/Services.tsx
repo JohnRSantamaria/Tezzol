@@ -6,11 +6,11 @@ import RAEDVIP from '../../public/images/sala-raed-vip.png';
 
 export default function Services() {
 	return (
-		<section className='relative flex flex-col items-center gap-4 h-screen w-full bg-light text-dark'>
+		<section className='relative container flex flex-col items-center gap-4 min-h-screen w-full bg-light text-dark'>
 			<AnimatedText text='Salas' className='!text-dark' />
-			<section className='flex flex-col justify-evenly gap-8 h-[100%]'>
-				<article className='flex items-center justify-evenly px-4'>
-					<section className='w-1/3 '>
+			<section className='flex flex-col gap-12'>
+				<article className='flex flex-col md:flex-row items-center justify-around px-4'>
+					<section className='md:w-1/2 '>
 						<h2 className='text-2xl font-bold text-primary'>Sala RAED VIP</h2>
 						<p className='text-lg font-bold'>
 							Precio: <span className='text-primary'>????</span>
@@ -28,15 +28,16 @@ export default function Services() {
 							desde cero o conviértete en un exitoso coach en línea.
 						</p>
 					</section>
-					<Image
-						src={RAEDVIP}
-						alt='imagen del plan standar'
-						className='h-auto w-2/12 rounded-full border-4 border-light'
-					/>
+					<Image src={RAEDVIP} alt='imagen del plan standar' className='h-auto w-4/5 md:w-1/4 ' />
 				</article>
-				<article className='flex items-center justify-evenly px-4'>
-					<Image src={RAED} alt='imagen del plan standar' className='h-auto w-2/12' />
-					<section className=' w-1/3'>
+
+				<article className='flex flex-col md:flex-row items-center justify-around px-4'>
+					<Image
+						src={RAED}
+						alt='imagen del plan standar'
+						className='h-auto w-4/5 md:w-1/4 order-2 md:order-1'
+					/>
+					<section className='md:w-1/2 md:order-2'>
 						<h2 className='text-2xl font-bold text-primary'>Sala RAED</h2>
 						<p className='text-lg font-bold'>
 							Precio: <span className='text-primary'>????</span>

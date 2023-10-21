@@ -28,7 +28,7 @@ export default function SignInButton() {
 	return (
 		<Button
 			onClick={signIn}
-			className='border-2 font-medium border-primary hover:bg-light dark:hover:bg-dark hover:text-primary px-8 py-4 bg-primary rounded-lg'
+			className='border py-2 px-4 rounded-md xl:text-xl border-primary bg-primary hover:bg-dark active:relative active:top-1 font-bold capitalize'
 		>
 			<div className='flex gap-2 items-center align-middle'>Ingresa con google {rightArrow}</div>
 		</Button>

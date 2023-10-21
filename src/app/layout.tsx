@@ -10,8 +10,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-	title: 'Stripe App Demo',
-	description: 'Stripe and Firebase App',
+	title: 'RAED',
+	description: 'Descripcion de la pagina',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
