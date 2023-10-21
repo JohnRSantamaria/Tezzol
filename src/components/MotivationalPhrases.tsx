@@ -1,6 +1,12 @@
 import React from 'react';
+import { useBearStore } from '@/store/isAuthenticated';
+import Button from './Button';
 
 export default function MotivationalPhrases() {
+	const bears = useBearStore((state) => state.bears);
+	const handleClick = () => {
+		useBearStore.setState({ bears: bears + 1 });
+	};
 	return (
 		<section className='relative container flex flex-col items-center gap-16 px-4 h-screen w-full bg-light text-dark'>
 			<article className='text-2xl lg:w-1/2 border-l-2  border-primary pl-4 '>
@@ -25,6 +31,7 @@ export default function MotivationalPhrases() {
 				</p>
 				<p>SU DEDICACIÓN NO NEGOCIABLE A MISMO MISMO Y NUESTRO MAYOR POTENCIAL. ¡ES GRATITUD!</p>
 			</article>
+			<Button onClick={handleClick}>Add a bear</Button>
 		</section>
 	);
 }
