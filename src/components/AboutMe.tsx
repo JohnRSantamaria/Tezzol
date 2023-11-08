@@ -1,29 +1,62 @@
 import React from 'react';
 import AnimatedText from './AnimatedText';
+import Image from 'next/image';
+import Rodri from '../../public/images/rodri.png';
 import Scrawl from './Scrawl';
-import Circle from '../../public/svg/circle';
-
 export default function AboutMe() {
 	return (
-		<section className='flex flex-col items-center gap-4 h-screen w-full bg-light text-dark overflow-hidden'>
-			<AnimatedText text='Mi historia' />
-			<section className='relative container flex flex-wrap flex-col md:flex-row px-4 min-h-fit'>
-				<figcaption className='text-center md:w-1/2 '>Image</figcaption>
-				<div className='md:w-1/2 pl-4 border-l-2 border-primary  '>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ut a delectus corrupti
-					atque sequi reiciendis voluptate dolorem vel eaque, ratione doloremque? Consequatur
-					provident et quo qui rerum ducimus fugiat? Provident nulla autem veniam illum repudiandae
-					pariatur illo debitis exercitationem tenetur laudantium alias suscipit quibusdam amet
-					itaque accusantium, adipisci temporibus dolor magni! Magni, asperiores? Veritatis placeat
-					numquam provident voluptate sapiente. Cumque, doloribus, neque itaque magni, nulla
-					inventore laudantium quidem vel odit facilis obcaecati. Saepe ducimus numquam soluta iure
-					Lorem ipsum dolor sit
-				</div>
-				{/* <Scrawl className='top-56 text-lg left-[16%] -rotate-45 '>no eres nada</Scrawl>
-				<Scrawl className='bottom-1/2 text-lg right-[14%] rotate-90'>nunca tendre nada</Scrawl>
-				<Scrawl className='bottom-1/3 text-lg left-1/4 rotate-45'>Es muy dificil emprender</Scrawl>
-				<Scrawl className='bottom-1/3 text-lg right-1/2 rotate-12'>no tengo tiempo</Scrawl>
-			<Scrawl className='top-44 text-lg left-1/2 '>Esta es la vida que nos toco</Scrawl> */}
+		<section className='flex flex-col items-center  w-full bg-light text-dark '>
+			<section>
+				<AnimatedText text='Mi historia' />
+			</section>
+
+			<section className='relative flex flex-col gap-8 items-center text-justify container'>
+				<p className='text-md px-4'>
+					Mi historia es la prueba de que ningún comienzo es demasiado humilde para
+					<span className='text-primary'> alcanzar el éxito.</span> Comencé mi viaje en las calles
+					de Colombia, <span className='text-primary'>vendiendo dulces</span> y pasando noches{' '}
+					<span className='text-primary'>sin dinero</span> en ellas. Pero nunca permití que las
+					dificultades me derrotaran. En lugar de eso,{' '}
+					<span className='text-primary'>aprendí las claves</span> para superar esas situaciones y
+					transformar mi vida.
+				</p>
+				<article className='px-4 md:hidden'>
+					<div className='border-l-2 border-primary px-2 text-3xl'>
+						La única forma de fallar es no intentarlo.
+					</div>
+				</article>
+
+				<article className='md:flex items-center hidden order-3'>
+					<div className='px-4 w-1/2'>
+						<div className='border-l-2 border-primary px-2 text-3xl'>
+							La única forma de fallar es no intentarlo.
+						</div>
+					</div>
+					<figure className='max-w-lg w-1/2'>
+						<Image src={Rodri} alt='imagen de un hombre de perfil' className='w-full h-auto' />
+					</figure>
+				</article>
+
+				<p className='text-md px-4 '>
+					Hoy, mi realidad es muy diferente.
+					<span className='text-primary'> Vivo de internet</span>, y tengo la libertad de elegir
+					dónde estar en este hermoso mundo. Ahora,
+					<span className='text-primary'> quiero compartir</span> contigo las mismas estrategias y
+					conocimientos que me ayudaron a lograr esta transformación.{' '}
+					<span className='text-primary'>Estoy aquí</span> para guiarte en tu viaje, para que{' '}
+					<span className='text-primary'>puedas superar</span> cualquier obstáculo que se cruce en
+					tu camino y alcanzar tus sueños. ¡Así que únete a mí y descubre cómo puedes escribir tu
+					propia historia de éxito!
+				</p>
+				{/* no nesitas motivacion necesitas disciplina */}
+				<figure className='max-w-sm md:hidden'>
+					<Image src={Rodri} alt='imagen de un hombre de perfil' className='w-full h-auto' />
+				</figure>
+				<Scrawl className='-top-20  left-0 -rotate-45 '>no tengo tiempo</Scrawl>
+				<Scrawl className='top-1/2 -right-10 rotate-90'>nunca tendre nada</Scrawl>
+				<Scrawl className='bottom-1/3 rotate-12 md:bottom-1/2 '>
+					Esta es la vida que nos toco
+				</Scrawl>
 			</section>
 		</section>
 	);

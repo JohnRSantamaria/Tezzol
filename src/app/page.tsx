@@ -13,11 +13,11 @@ export default function Home() {
 		<>
 			<HeroImage />
 			<AboutMe />
-			<MotivationalPhrases />
+			{/* <MotivationalPhrases />
 			<Video />
 			<Services />
 			<BlogSlider />
-			<NavbarMobile />
+			<NavbarMobile /> */}
 		</>
 	);
 }

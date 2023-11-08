@@ -34,7 +34,7 @@ export default function NavbarMobile() {
 				custom='100%'
 				className='navbar md:hidden'
 			>
-				<motion.div className='navbar bg-primary' variants={sidebar} />
+				<motion.div className='navbar md:hidden bg-primary' variants={sidebar} />
 				<Navigation />
 				<MenuToggle toggle={() => toggleOpen()} />
 			</motion.nav>
