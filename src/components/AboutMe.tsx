@@ -10,7 +10,7 @@ export default function AboutMe() {
 				<AnimatedText text='Mi historia' />
 			</section>
 
-			<section className='relative flex flex-col gap-8 items-center text-justify container'>
+			<section className='relative flex flex-col gap-8 items-center text-justify container max-w-7xl'>
 				<p className='text-md px-4'>
 					Mi historia es la prueba de que ningún comienzo es demasiado humilde para
 					<span className='text-primary'> alcanzar el éxito.</span> Comencé mi viaje en las calles
@@ -53,8 +53,8 @@ export default function AboutMe() {
 					<Image src={Rodri} alt='imagen de un hombre de perfil' className='w-full h-auto' />
 				</figure>
 				<Scrawl className='-top-20  left-0 -rotate-45 '>no tengo tiempo</Scrawl>
-				<Scrawl className='top-1/2 -right-10 rotate-90'>nunca tendre nada</Scrawl>
-				<Scrawl className='bottom-1/3 rotate-12 md:bottom-1/2 '>
+				<Scrawl className='bottom-0 -right-10 rotate-90'>nunca tendre nada</Scrawl>
+				<Scrawl className='bottom-32 -left-20 rotate-12 md:bottom-1/2 '>
 					Esta es la vida que nos toco
 				</Scrawl>
 			</section>
