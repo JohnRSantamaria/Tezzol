@@ -6,7 +6,7 @@ import RAEDVIP from '../../public/images/sala-raed-vip.png';
 
 export default function Services() {
 	return (
-		<section className='relative container flex flex-col items-center gap-4 min-h-screen w-full bg-light text-dark'>
+		<section className='relative ml-auto mr-auto py-4 container flex flex-col items-center gap-4 min-h-screen w-full bg-transparent text-dark'>
 			<AnimatedText text='Salas' className='!text-dark' />
 			<section className='flex flex-col gap-12'>
 				<article className='flex flex-col md:flex-row items-center justify-around px-4'>
