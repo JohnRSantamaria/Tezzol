@@ -14,9 +14,9 @@ export default function Home() {
 			<HeroImage />
 			<AboutMe />
 			<MotivationalPhrases />
-			{/*<Video />
 			<Services />
-			<BlogSlider />
+			{/*<BlogSlider />
+			<Video />
 			<NavbarMobile /> */}
 		</>
 	);

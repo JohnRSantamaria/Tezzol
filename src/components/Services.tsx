@@ -15,7 +15,7 @@ export default function Services() {
 						<p className='text-lg font-bold'>
 							Precio: <span className='text-primary'>????</span>
 						</p>
-						<p className='font-medium'>
+						<p className='font-medium text-justify'>
 							Estoy aquí para ofrecerte una experiencia completa que{' '}
 							<span className='text-primary'>cambiará tu vida</span>. Comenzarás con una mentoría
 							inicial <span className='text-primary'>1 a 1 conmigo</span>, donde compartiré contigo
@@ -42,7 +42,7 @@ export default function Services() {
 						<p className='text-lg font-bold'>
 							Precio: <span className='text-primary'>????</span>
 						</p>
-						<p className='font-medium'>
+						<p className='font-medium text-justify'>
 							Si buscas mejorar tus habilidades y mentalidad sin comprometerte al nivel VIP, te
 							ofrezco mi plan <span className='text-primary'>SALA RAED</span>. Tendrás acceso a mis{' '}
 							<span className='text-primary'>mentorías semanales</span> en vivo, la oportunidad de
