@@ -15,6 +15,7 @@ export default function CaruoselSalas() {
 			infiniteLoop
 			emulateTouch
 			stopOnHover
+			showArrows={false}
 			interval={5000}
 			showIndicators={false}
 			className='w-full py-4 px-2 '
